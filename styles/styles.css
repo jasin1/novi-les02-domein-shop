@@ -93,6 +93,7 @@ a{
      background-position: center;
      padding-top: 130px;
      padding-bottom: 350px;
+     height: 100vh;
  }
 
  .header-content{
@@ -124,6 +125,12 @@ a{
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#header-form button:hover{
+    background-color: #899CA0;
 }
 
 input::placeholder{
@@ -204,7 +211,14 @@ figcaption{
     color: white;
     background-color: #1C2B32;
     border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+.contact-btn:hover{
+    background-color: #899CA0;
+}
+
 
 
 
@@ -221,6 +235,11 @@ details{
 
 summary{
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+summary:hover{
+    color: #899CA0;
 }
 
 
@@ -228,7 +247,7 @@ details p{
     margin-top: 10px;
     display: block;
     color: white;
-    background-color: #606e61;
+    background-color: #899CA0;
     padding: 40px 60px;
     border-radius: 10px;
 }
