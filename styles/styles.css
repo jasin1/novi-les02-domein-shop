@@ -17,18 +17,18 @@ Table of Contents:
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: 0;
-    vertical-align: baseline;
+    /*vertical-align: baseline;*/
 }
 
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
+
 
 img {
     max-width: 100%;
@@ -54,7 +54,11 @@ input, button{
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 2rem;
 }
 
 
@@ -70,12 +74,17 @@ section{
 }
 
 .container{
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 60px;
 }
+
 
 a{
     color: #899CA0;
+    transition: color 0.3s ease;
+}
+
+a:hover{
+    color: #b21705;
 }
 
 
@@ -91,7 +100,7 @@ a{
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
-     padding-top: 130px;
+     padding-top: 120px;
      padding-bottom: 350px;
      height: 100vh;
  }
@@ -109,7 +118,9 @@ a{
 }
 
 #domein-check {
-    background-color: transparent;
+    /*background-color: transparent;*/
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.15);
     border: 2px solid #1C2B32;
     padding: 20px 40px;
     border-top-left-radius: 100px;
@@ -129,13 +140,20 @@ a{
     transition: background-color 0.3s ease;
 }
 
+
+
 #header-form button:hover{
     background-color: #899CA0;
+}
+
+input{
+    text-overflow: initial;
 }
 
 input::placeholder{
     color: #1C2B32;
     opacity: 1;
+    overflow: visible;
 }
 
 
@@ -148,6 +166,12 @@ h2{
     padding: 60px 120px;
     box-shadow: 0 2px 10px rgba(56, 56, 56, 0.16);
     border-radius: 10px;
+
+}
+
+
+
+.first{
     margin-bottom: 40px;
 }
 
@@ -177,13 +201,13 @@ blockquote footer>img{
     height: 44px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 24px;
+    margin-right: 16px;
 }
 
 blockquote footer>span{
     font-size: 14px;
     font-style: italic;
-    color: #899CA0;
+    color: #56595b;
 
 }
 
@@ -227,10 +251,12 @@ figcaption{
 
 .faq{
     text-align: left;
+    margin-bottom: 80px;
 }
 
 details{
     margin-bottom: 40px;
+    max-width: 650px;
 }
 
 summary{
@@ -257,7 +283,11 @@ details p{
 
 .main-footer{
     background-color: #1C2B32;
-    color: white;
     padding: 40px 60px;
     text-align: center;
+}
+
+.main-footer p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
 }
